@@ -6,7 +6,7 @@ Thanks for improving this package.
 
 1. Read [docs/english-writing-standards.md](docs/english-writing-standards.md).
 2. Keep skills short. Link to the standards document. Do not paste it into skills.
-3. Keep examples product-agnostic. Do not add private company data.
+3. Keep examples product-agnostic. Do not add private personal data, employer names, or proprietary codebase details.
 4. Prefer one clear change per pull request.
 
 ## Suggested change types
@@ -25,6 +25,7 @@ Thanks for improving this package.
 3. Descriptive sentences stay within 25 words when practical.
 4. Skills still link to the standards document.
 5. Examples open offline without a build step.
+6. No private personal or proprietary project data appears in the diff.
 
 ## Local checks
 

@@ -105,3 +105,8 @@ Use existing tools without adding dependencies solely for a small artifact. Repo
 Deliver a clickable file link and state what works, what you checked, and any material limits.
 
 Follow the host repository rules for commits, pushes, wiki changes, and hosting. Do not commit unless the user asks.
+
+## Privacy for public examples
+
+Do not put private personal data, employer names, or proprietary codebase details into shared examples.
+Keep sample content generic.

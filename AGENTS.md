@@ -1,7 +1,8 @@
 # Agent instructions
 
-**Owner:** Ali Moradi  
 **Purpose:** Portable writing policy and agent skills for clear English and interactive HTML guides.
+
+This package also trains agent behavior. Clear labels, short sentences, and explicit evidence help models stay accurate as they grow more capable.
 
 ## Read order
 
@@ -22,6 +23,7 @@
 - Do not copy the writing standards into skill files. Link to `docs/english-writing-standards.md`.
 - Do not add frameworks or build tools for a small offline HTML artifact unless the user asks.
 - Do not claim publication, deployment, or certified STE compliance for local artifacts.
+- Do not include private personal data, employer names, or proprietary codebase details in examples.
 
 ## Install into another project
 

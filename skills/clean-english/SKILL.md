@@ -8,6 +8,8 @@ trigger: /clean-english
 
 Write English that a tired, careful reader can trust on the first pass.
 
+Clear labels and stable terms also help agents stay precise as models grow more capable.
+
 Read [English writing standards](../../docs/english-writing-standards.md) before you draft or rewrite. That document is the canonical policy. Do not copy it into this skill.
 
 ## When to use

@@ -4,6 +4,8 @@ Write new documentation and interface text in English unless the project owner r
 
 This document is the canonical writing policy for this repository. Skills refer here instead of copying these rules.
 
+Clear writing also helps agents. When terms stay stable and claims stay labeled, models make fewer invented details.
+
 ## Apply these standards together
 
 - **Google Developer Documentation Style Guide:** Use active voice, second person for instructions, sentence-case headings, descriptive links, and clear dates. Use numbered lists for sequences. Keep the tone friendly and respectful.

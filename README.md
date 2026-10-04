@@ -1,8 +1,17 @@
-# Clean English Skills
+# Growing Clarity
 
-Portable writing standards and agent skills for clear English documentation and interactive HTML guides.
+Clear English standards and agent skills that help people write better docs — and help AI agents stay precise as they grow.
 
-Use this repository when you want agents and teammates to write clear docs, avoid AI filler, and ship small offline HTML learning pages.
+## Why this exists
+
+Long, vague, hype-filled text confuses readers and models. Short, labeled, concrete English reduces mistakes for both.
+
+Use this package to:
+
+- write documentation that a tired non-native reader can trust
+- teach agents to separate evidence, interpretation, proposals, and decisions
+- build small offline interactive HTML guides without a framework
+- give future model sessions a stable writing contract they can follow
 
 ## What you get
 
@@ -31,8 +40,8 @@ These are derived rules. They are not a claim of certified ASD-STE100 compliance
 ### Option A — copy into a project
 
 ```bash
-git clone https://github.com/alimoradi296/clean-english-skills.git
-cd clean-english-skills
+git clone https://github.com/alimoradi296/growing-clarity.git
+cd growing-clarity
 ./scripts/install.sh /path/to/your-project
 ```
 
@@ -46,7 +55,7 @@ Then add this block to the project `AGENTS.md` or equivalent agent instructions:
 ```md
 ## English writing standards
 
-Follow `docs/english-writing-standards.md` from Clean English Skills.
+Follow `docs/english-writing-standards.md` from Growing Clarity.
 Skills must refer to that document instead of copying it.
 ```
 
@@ -62,8 +71,8 @@ Skills must refer to that document instead of copying it.
 Keep this repository nearby. Tell your agent:
 
 ```text
-Use clean-english-skills/docs/english-writing-standards.md
-and the skills under clean-english-skills/skills/.
+Use growing-clarity/docs/english-writing-standards.md
+and the skills under growing-clarity/skills/.
 ```
 
 ## Quick start for agents
@@ -95,7 +104,18 @@ xdg-open examples/interactive-html/sample-learning-guide.html
 - Skills stay short and link to one writing policy.
 - HTML guides stay self-contained so they work offline.
 - Evidence, interpretation, proposals, and decisions stay labeled.
-- The package stays product-agnostic so you can copy it into any repo.
+- The package stays product-agnostic. Examples contain no private personal or codebase data.
+- Clear writing is treated as a learning aid for humans and agents.
+
+## Privacy
+
+This repository must not contain:
+
+- personal contact details or private biography
+- employer or customer names from private work
+- proprietary source paths, internal ticket IDs, or production credentials
+
+If you contribute, keep examples generic.
 
 ## Contributing
 
@@ -104,7 +124,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 [MIT](LICENSE)
-
-## Maintainer
-
-Ali Moradi ([@alimoradi296](https://github.com/alimoradi296))

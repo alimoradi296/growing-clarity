@@ -4,7 +4,7 @@ This repository contains documentation and agent skill files. It does not run a 
 
 ## Report a vulnerability
 
-If you find a security issue in the installer script or example HTML, open a private GitHub security advisory or email the maintainer through GitHub.
+If you find a security issue in the installer script or example HTML, open a private GitHub security advisory.
 
 Do not include secrets in issues or pull requests.
 
@@ -13,3 +13,4 @@ Do not include secrets in issues or pull requests.
 - Treat browser `localStorage` in example guides as local-only.
 - Do not paste credentials into worksheets or exported notes.
 - Review any HTML you generate before you share it publicly.
+- Keep examples free of personal data and proprietary codebase details.

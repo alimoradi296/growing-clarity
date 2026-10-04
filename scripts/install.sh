@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Copy Clean English Skills into a target project.
+# Copy Growing Clarity into a target project.
 set -euo pipefail
 
 usage() {
