@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean English"
+  short_description: "Write clear documentation with the English writing standards"
+  default_prompt: "Use $clean-english and docs/english-writing-standards.md to write or rewrite this text."

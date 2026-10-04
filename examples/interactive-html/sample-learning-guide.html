@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample learning guide · Clean English Skills</title>
+<style>
+:root{--bg:#f3f5f7;--ink:#1c2430;--muted:#5b6675;--line:#d5dde6;--panel:#fff;--soft:#e8eef4;--accent:#0f5f6b;--ok:#1f6b45;--bad:#8b2e2e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Segoe UI",system-ui,sans-serif}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:8px;padding:8px 14px;background:var(--panel)}
+button:hover{background:var(--soft)}button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+button:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 50%, white);outline-offset:2px}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 48px}.brand{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.meta{font-size:13px;color:var(--muted)}h1{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:10px 0 12px}h2{font-size:22px;margin:0 0 10px}p{margin:0 0 12px}
+.lead{font-size:18px;color:var(--muted)}.nav{position:sticky;top:0;z-index:5;display:flex;gap:8px;flex-wrap:wrap;padding:10px 0;background:color-mix(in srgb,var(--bg) 92%, white);border-bottom:1px solid var(--line)}
+.nav button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}.panel{padding-top:20px}.panel[hidden]{display:none}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px}
+.tag{display:inline-block;background:var(--soft);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:650}
+.checks{list-style:none;padding:0;margin:10px 0}.checks li{padding:8px 0;border-bottom:1px solid var(--line)}.checks label{display:flex;gap:10px;cursor:pointer}
+.q{border:1px solid var(--line);border-radius:10px;padding:14px;margin:10px 0;background:#fff}.q label{display:flex;gap:8px;margin:6px 0;cursor:pointer}
+.feedback{margin-top:8px;font-size:14px}.feedback.ok{color:var(--ok)}.feedback.bad{color:var(--bad)}.small{font-size:13px;color:var(--muted)}
+.progress{width:100%;height:8px;accent-color:var(--accent)}table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}th{background:var(--soft)}
+@media(max-width:700px){.wrap{padding:20px 14px}}@media print{.nav,button{display:none!important}.panel[hidden]{display:block!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">Clean English Skills · Example</div>
+    <div class="meta">Offline sample · No build step</div>
+    <h1>Learn the writing labels before you draft.</h1>
+    <p class="lead">This sample shows section navigation, a checklist, and a short self-check.</p>
+  </header>
+  <nav class="nav" aria-label="Sections">
+    <button type="button" data-panel="labels" aria-pressed="true" aria-controls="labels">1. Labels</button>
+    <button type="button" data-panel="rules" aria-pressed="false" aria-controls="rules">2. Rules</button>
+    <button type="button" data-panel="check" aria-pressed="false" aria-controls="check">3. Self-check</button>
+  </nav>
+  <main>
+    <section id="labels" class="panel" aria-labelledby="labels-title">
+      <div class="card">
+        <span class="tag">Start here</span>
+        <h2 id="labels-title">Separate four kinds of text.</h2>
+        <table>
+          <thead><tr><th scope="col">Label</th><th scope="col">Meaning</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Evidence</strong></td><td>Observed fact with a source</td></tr>
+            <tr><td><strong>Interpretation</strong></td><td>What you think the evidence means</td></tr>
+            <tr><td><strong>Proposal</strong></td><td>Suggested action not yet agreed</td></tr>
+            <tr><td><strong>Decision</strong></td><td>Agreed action with an owner when known</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h2>Checklist</h2>
+        <ul class="checks">
+          <li><label><input type="checkbox" data-key="c1"><span>I can name the four labels.</span></label></li>
+          <li><label><input type="checkbox" data-key="c2"><span>I will mark proposals as proposed until someone agrees.</span></label></li>
+        </ul>
+      </div>
+    </section>
+    <section id="rules" class="panel" aria-labelledby="rules-title" hidden>
+      <div class="card">
+        <h2 id="rules-title">Use short sentences and one term per concept.</h2>
+        <p>Limit procedural sentences to 20 words. Limit descriptive sentences to 25 words.</p>
+        <p>Put the condition before the instruction. State one action per instruction.</p>
+        <p class="small">Preserve code, commands, paths, and quotations even when they are long.</p>
+      </div>
+    </section>
+    <section id="check" class="panel" aria-labelledby="check-title" hidden>
+      <div class="card">
+        <h2 id="check-title">Check one idea.</h2>
+        <div class="q">
+          <fieldset>
+            <legend>Which sentence is a proposal?</legend>
+            <label><input type="radio" name="q1" value="a"> The log shows five failed logins.</label>
+            <label><input type="radio" name="q1" value="b"> Proposed: add rate limiting this week.</label>
+            <label><input type="radio" name="q1" value="c"> The team agreed to ship rate limiting on Monday.</label>
+          </fieldset>
+          <div class="feedback" id="feedback" hidden></div>
+        </div>
+        <button type="button" class="primary" id="score">Check answer</button>
+        <p class="small" id="result" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+  <footer style="margin-top:18px;border-top:1px solid var(--line);padding-top:12px">
+    <span class="small" id="save-status" role="status" aria-live="polite">Progress saves in this browser.</span>
+    <progress class="progress" id="progress" max="2" value="0" aria-label="Checklist completion"></progress>
+    <p class="small">This file is an example only. It does not publish anywhere.</p>
+  </footer>
+</div>
+<script>
+'use strict';
+const STORAGE_KEY = 'clean-english-skills-sample-guide-v1';
+let state = {version:1, values:{}, answer:''};
+const status = document.getElementById('save-status');
+function tell(msg){status.textContent = msg;}
+try {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved) {
+    const parsed = JSON.parse(saved);
+    if (parsed && parsed.version === 1) state = parsed;
+  }
+} catch { tell('Browser storage is unavailable.'); }
+function persist(){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); tell('Saved in this browser.'); }
+  catch { tell('Browser storage is unavailable.'); }
+}
+function updateProgress(){
+  const boxes = [...document.querySelectorAll('input[type="checkbox"][data-key]')];
+  document.getElementById('progress').value = boxes.filter(b => b.checked).length;
+}
+function restore(){
+  document.querySelectorAll('input[type="checkbox"][data-key]').forEach(box => {
+    box.checked = state.values[box.dataset.key] === true;
+  });
+  if (state.answer) {
+    const input = document.querySelector(`input[name="q1"][value="${state.answer}"]`);
+    if (input) input.checked = true;
+  }
+  updateProgress();
+}
+restore();
+document.addEventListener('change', (event) => {
+  const t = event.target;
+  if (t.matches('input[type="checkbox"][data-key]')) {
+    state.values[t.dataset.key] = t.checked;
+    persist();
+    updateProgress();
+  }
+  if (t.matches('input[name="q1"]')) {
+    state.answer = t.value;
+    persist();
+  }
+});
+function showPanel(id){
+  document.querySelectorAll('.panel').forEach(panel => { panel.hidden = panel.id !== id; });
+  document.querySelectorAll('[data-panel]').forEach(btn => {
+    btn.setAttribute('aria-pressed', String(btn.dataset.panel === id));
+  });
+}
+document.querySelectorAll('[data-panel]').forEach(btn => {
+  btn.addEventListener('click', () => showPanel(btn.dataset.panel));
+});
+document.getElementById('score').addEventListener('click', () => {
+  const feedback = document.getElementById('feedback');
+  const result = document.getElementById('result');
+  feedback.hidden = false;
+  if (state.answer === 'b') {
+    feedback.className = 'feedback ok';
+    feedback.textContent = 'Correct. The sentence marks a proposed action.';
+    result.textContent = 'Score: 1 of 1.';
+  } else if (!state.answer) {
+    feedback.className = 'feedback bad';
+    feedback.textContent = 'Select an answer.';
+    result.textContent = '';
+  } else {
+    feedback.className = 'feedback bad';
+    feedback.textContent = 'Not yet. A proposal is a suggested action that is not yet agreed.';
+    result.textContent = 'Score: 0 of 1.';
+  }
+});
+</script>
+</body>
+</html>

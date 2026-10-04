@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interactive HTML"
+  short_description: "Create clear, accessible interactive HTML guides"
+  default_prompt: "Use $interactive-html to create a local HTML guide with useful interactions and the English writing standards."
