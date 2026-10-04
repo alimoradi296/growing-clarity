@@ -99,6 +99,10 @@ Open the sample guide in a browser:
 xdg-open examples/interactive-html/sample-learning-guide.html
 ```
 
+![Sample interactive learning guide](examples/interactive-html/assets/sample-learning-guide.png)
+
+The screenshot shows the default Labels section with navigation, a comparison table, and a checklist.
+
 ## Design choices
 
 - Skills stay short and link to one writing policy.
