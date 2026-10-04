@@ -19,7 +19,7 @@ Use this package to:
 |---|---|
 | [`docs/english-writing-standards.md`](docs/english-writing-standards.md) | Canonical English writing policy |
 | [`skills/clean-english/`](skills/clean-english/) | Skill that applies the writing policy |
-| [`skills/interactive-html/`](skills/interactive-html/) | Skill that builds accessible interactive HTML guides |
+| [`skills/interactive-html/`](skills/interactive-html/) | Skill that builds interactive HTML guides with diagrams and concept teaching |
 | [`examples/interactive-html/`](examples/interactive-html/) | Minimal sample guide |
 | [`scripts/install.sh`](scripts/install.sh) | Copy skills into another project |
 
@@ -89,6 +89,7 @@ Rewrite this README for a tired non-native reader.
 ```text
 /interactive-html
 Create docs/interactive-learning/topic-guide.html that teaches X.
+Use diagrams where they help, and teach any new concepts the reader needs first.
 ```
 
 ## Example
@@ -107,6 +108,8 @@ The screenshot shows the default Labels section with navigation, a comparison ta
 
 - Skills stay short and link to one writing policy.
 - HTML guides stay self-contained so they work offline.
+- Diagrams appear where relationships or process matter; each type is chosen for the question.
+- New concepts get a short teach-before-use panel when the topic needs them.
 - Evidence, interpretation, proposals, and decisions stay labeled.
 - The package stays product-agnostic. Examples contain no private personal or codebase data.
 - Clear writing is treated as a learning aid for humans and agents.
